@@ -6,10 +6,8 @@
         'dataProvider' => $dataProvider,
         'columns' =>[
             'id',
-            'nim',
-            'nama',
-            'kelas',
-            'jurusan',
+            'id_mahasiswa',
+            'foto_profile',
         ]
     ])
 ?>

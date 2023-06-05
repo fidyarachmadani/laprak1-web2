@@ -6,10 +6,10 @@
         'dataProvider' => $dataProvider,
         'columns' =>[
             'id',
-            'nim',
-            'nama',
-            'kelas',
-            'jurusan',
+            'username',
+            'name',
+            'tgl_lahir',
+            'no_telp',
         ]
     ])
 ?>
