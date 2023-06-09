@@ -14,7 +14,7 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'OFwnQ4m4tPOaWyzRDOkQTprMgMn-iQ-y',
+            'cookieValidationKey' => 'YyYhhpwkLvBPZi9AN0rjm0Tgk4tOiC8k',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -42,15 +42,36 @@ $config = [
             ],
         ],
         'db' => $db,
-
-        'urlManager' => [
+        
+    'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-
+        'assetManager'=>[
+            'bundles'=>[
+                'yii\web\jqueryAsset'=> [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'js'=>[
+                        'template/js/jquery.min.js',
+                    ]
+                ],
+                'yii\bootstrap5\BootstrapAsset'=>[
+                    'sourcePath' => null ,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'css'=>[
+                        'template/css/bootstrap.min.css'
+                    ],
+                ],
+            ],
+        ],
+        
     ],
+    
     'params' => $params,
 ];
 
